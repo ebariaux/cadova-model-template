@@ -1,11 +1,11 @@
-// swift-tools-version: 6.1
+// swift-tools-version: 6.3
 import PackageDescription
 
 let package = Package(
     name: "model",
-    platforms: [.macOS(.v14)],
+    platforms: [.macOS(.v15)],
     dependencies: [
-        .package(url: "https://github.com/tomasf/Cadova.git", .upToNextMinor(from: "0.10.0")),
+        .package(url: "https://github.com/tomasf/Cadova.git", from: "1.0.0"),
     ],
     targets: [
         .executableTarget(
